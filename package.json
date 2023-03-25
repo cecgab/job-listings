@@ -6,14 +6,17 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://cecgab.github.io/job-listings",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
     "@parcel/transformer-svg-react": "^2.8.3",
+    "gh-pages": "^5.0.0",
     "parcel": "^2.8.3",
     "parcel-reporter-static-files-copy": "^1.5.0",
     "process": "^0.11.10"
