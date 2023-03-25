@@ -1,0 +1,7 @@
+@mixin breakpoint($device, $min:true) {
+  @if $min == false {
+    @media (max-width: #{map-get($breakpoints, $device)}) { @content ; }
+  } @else {
+    @media (min-width: #{map-get($breakpoints, $device) + 1px}) { @content ; }
+  }
+}

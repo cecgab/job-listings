@@ -1,0 +1,15 @@
+@import '../../styles/common/variables.scss';
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: map-get($colors, primary);
+
+  @include breakpoint(md) {
+    width: 88px;
+    height: 88px;
+  }
+}

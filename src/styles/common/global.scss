@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+html {
+  font-size: 62.5%;
+  position: relative;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-rendering: auto;
+  color: map-get($colors, neutral900);
+  background-color: map-get($colors, neutral100);
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+
+  main {
+    padding-bottom: 12rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+
+  @include breakpoint(md) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.6rem;
+
+  @include breakpoint(md) {
+    font-size: 2.3rem;
+  }
+}
+
+h5 {
+  font-size: 1.6rem;
+  color: map-get($colors, primary);
+
+  @include breakpoint(md) {
+    font-size: 1.8rem;
+  }
+}

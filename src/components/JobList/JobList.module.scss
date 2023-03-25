@@ -1,0 +1,13 @@
+@import '../../styles/common/variables.scss';
+
+.list {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+
+      @include breakpoint(md) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}

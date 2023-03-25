@@ -1,0 +1,40 @@
+@import "../../styles/common/variables.scss";
+
+.wrapper {
+  min-height: 7.2rem;
+
+  &:not(:last-child) {
+    margin-bottom: 5.6rem;
+
+    @include breakpoint(md) {
+      margin-bottom: 3.2rem;
+    }
+  }
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  width: 100%;
+  padding: 2rem 4rem;
+  border-radius: 4px;
+  background-color: map-get($colors, light);
+  box-shadow: 0 4px 10px -4px #5ba4a466;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+  }
+
+  &__cleaner {
+    color: map-get($colors, primary);
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

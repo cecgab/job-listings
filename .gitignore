@@ -1,0 +1,7 @@
+.DS_Store
+npm-debug.log
+
+.parcel-cache/
+.cache/
+dist/
+node_modules/

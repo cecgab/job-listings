@@ -1,0 +1,36 @@
+@import "../../styles/common/variables.scss";
+
+.chip {
+  display: inline-flex;
+  font-size: 1.6rem;
+  line-height: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  color: map-get($colors, primary);
+  background-color: map-get($colors, neutral300);
+  cursor: pointer;
+
+  &:not(.chip--removable) {
+    &:hover {
+      color: map-get($colors, light);
+      background-color: map-get($colors, primary);
+    }
+  }
+
+  &__content {
+    display: inline-block;
+    padding: 0.8rem 1rem;
+  }
+
+  &__remove {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    color: map-get($colors, light);
+    background-color: map-get($colors, primary);
+
+    &:hover {
+      background-color: map-get($colors, neutral900);
+    }
+  }
+}
