@@ -1,5 +1,12 @@
 import { createContext, useState } from "react";
 
+/*
+  Context used to save active filters
+  @addFilter => add a new filter
+  @removeFilter => remove a specific filter
+  @removeAllFilter => cleaning filters
+*/
+
 export const FilterContext = createContext();
 
 export default function JobFilterProvider({ children }) {

@@ -7,15 +7,20 @@ export default function JobList({ ads }) {
   const [jobList, setJobList] = useState([]);
   const { filters } = useContext(FilterContext);
 
+  /*
+   Hook used to filter the list of jobs, if any filter is active
+  */
   useEffect(() => {
     if (filters && filters.length) {
       setJobList(
         ads.filter((job) => {
           let toInclude = true;
 
+          /*
+            Loop through the active filters and check whether the job adv should be included
+          */
           filters.forEach((filter) => {
             const value = job[filter.cat];
-
             if (toInclude) {
               if (Array.isArray(value)) {
                 toInclude = value.includes(filter.title);
